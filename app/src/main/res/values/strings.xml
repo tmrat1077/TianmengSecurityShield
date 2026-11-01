@@ -1,0 +1,301 @@
+<resources>
+    <string name="app_name">天梦安全护盾</string>
+    <string name="accessibility_desc">天梦安全护盾需要无障碍服务来拦截锁机病毒、检测音量键触发以及监控冻结应用的启动。</string>
+
+    <!-- 主界面 -->
+    <string name="permission_status">权限状态</string>
+    <string name="shizuku_permission">Shizuku 权限</string>
+    <string name="root_permission">Root 权限</string>
+    <string name="accessibility_permission">无障碍服务</string>
+    <string name="granted">已授权</string>
+    <string name="not_granted">未授权</string>
+    <string name="request_permission">申请权限</string>
+
+    <!-- 设备管理器 -->
+    <string name="admin_label">天梦安全护盾设备管理器</string>
+    <string name="admin_description">防止天梦安全护盾被直接卸载，并保持后台守护运行。</string>
+    <string name="admin_explain">激活后系统将不允许直接卸载本应用；如需卸载，必须先在本应用内取消设备管理器。设备管理器不需要 Root，也不会上传任何数据。</string>
+    <string name="admin_disable_warning">取消设备管理器后，天梦安全护盾将可以被直接卸载，后台守护也可能被系统清理。</string>
+    <string name="admin_active">已启用 · 无法直接卸载，后台常驻</string>
+    <string name="admin_inactive">未启用 · 点击激活，防止被卸载</string>
+    <string name="admin_deactivate_title">取消设备管理器？</string>
+    <string name="admin_deactivate_msg">取消后本应用可以被直接卸载，后台守护也可能被系统清理。确定要取消吗？</string>
+    <string name="admin_deactivate_confirm">仍要取消</string>
+    <string name="admin_keep">保持启用</string>
+    <string name="admin_unsupported">当前系统不支持设备管理器</string>
+    <string name="admin_need_root">需要 Root 授权后才能使用设备管理器</string>
+
+    <!-- 灵动岛自动点击器 -->
+    <string name="auto_clicker">灵动岛自动点击器</string>
+    <string name="auto_clicker_desc">多点位循环点击，可调间隔 / 按下时长 / 上限</string>
+    <string name="island_title">点击器</string>
+    <string name="island_interval">点击间隔</string>
+    <string name="island_interval_value">%1$d ms</string>
+    <string name="island_pick">选择位置</string>
+    <string name="island_start">开始</string>
+    <string name="island_stop">停止</string>
+    <string name="island_close">关闭</string>
+    <string name="island_status_idle">请先点击「选择位置」添加点位</string>
+    <string name="island_status_pos">已选 %1$d 个点位 · 间隔 %2$d ms，点「开始」运行</string>
+    <string name="island_status_running">运行中 · 第 %2$d/%1$d 点 · 已点击 %3$d 次</string>
+    <string name="island_status_no_cap">需要开启无障碍服务，或授予 Root / Shizuku</string>
+    <string name="island_need_overlay">开启灵动岛需要先授予悬浮窗权限</string>
+    <string name="island_no_target">请先选择要自动点击的位置</string>
+    <string name="island_no_points">还没有点位，请先点「选择位置」</string>
+    <string name="island_points_full">最多支持 10 个点位</string>
+    <string name="island_need_capability">需要开启无障碍服务，或授予 Root / Shizuku 才能自动点击</string>
+    <string name="island_pick_hint">点击屏幕上要自动点击的位置</string>
+    <string name="island_pick_sub">每点一次添加一个点位，最多 10 个，按顺序循环点击</string>
+    <string name="island_press">按下时长</string>
+    <string name="island_press_value">%1$d ms</string>
+    <string name="island_points_count">点位 %1$d/%2$d</string>
+    <string name="island_clear">清空</string>
+    <string name="island_random">随机偏移 ±8px（防机械点击）</string>
+    <string name="island_limit">点击上限</string>
+    <string name="island_limit_unlimited">∞</string>
+    <string name="island_limit_value">%1$d 次</string>
+    <string name="island_limit_reached">已达到点击上限，已自动停止</string>
+    <string name="island_countdown">%1$d 秒后开始（防误触），点「取消」可中止</string>
+    <string name="island_cancel">取消</string>
+    <string name="island_screen_off_stop">屏幕已关闭或锁屏，已自动停止点击</string>
+    <string name="island_notification_title">灵动岛点击器运行中</string>
+    <string name="island_notification_text">点顶部胶囊可展开控制面板</string>
+
+    <!-- 一键静音 -->
+    <string name="mute_guard">一键静音</string>
+    <string name="mute_guard_desc">关闭所有声音，并持续压制音量，防止锁机病毒放警报</string>
+    <string name="mute_guard_on">已开启：所有声音已关闭，持续压制中</string>
+    <string name="mute_guard_off">未开启：点击立即关闭所有声音</string>
+    <string name="mute_enabled_toast">已一键静音，所有声音已关闭</string>
+    <string name="mute_disabled_toast">已恢复声音</string>
+    <string name="mute_dnd_title">让闹钟也完全静音</string>
+    <string name="mute_dnd_msg">系统默认只允许应用静音媒体、铃声和通知，若要连闹钟、勿扰之外的提示音也一起静音，需要授予「勿扰访问权限」。是否现在去授权？</string>
+    <string name="mute_dnd_go">去授权</string>
+    <string name="mute_dnd_skip">暂不授权</string>
+    <string name="mute_notification_title">一键静音守卫运行中</string>
+    <string name="mute_notification_text">所有音频流已压到 0，点击回到应用关闭</string>
+
+    <string name="shield_status">护盾状态</string>
+    <string name="shield_running">护盾运行中</string>
+    <string name="shield_stopped">护盾未启动</string>
+    <string name="start_shield">启动护盾</string>
+    <string name="stop_shield">停止护盾</string>
+
+    <string name="trigger_settings">触发设置</string>
+    <string name="shake_trigger">摇一摇触发</string>
+    <string name="volume_trigger">音量键触发</string>
+    <string name="shake_sensitivity">摇动灵敏度</string>
+
+    <string name="features">功能模块</string>
+    <string name="virus_scan">病毒扫描与拦截</string>
+    <string name="app_freeze">应用冻结</string>
+    <string name="frozen_list">已冻结列表</string>
+
+    <!-- 病毒拦截 -->
+    <string name="virus_detected">检测到锁机病毒</string>
+    <string name="virus_block_msg">天梦安全护盾已拦截该锁机病毒！\n\n病毒应用：%1$s\n包名：%2$s\n\n正在强制退出并清除…</string>
+    <string name="virus_cleaned">病毒已清除</string>
+    <string name="virus_cleaned_msg">已成功强制退出并清除锁机病毒：%1$s</string>
+    <string name="confirm_delete">确认删除</string>
+    <string name="confirm_delete_msg">确定要删除应用「%1$s」吗？\n此操作不可恢复。</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="system_app_protected">系统应用受保护，无法删除</string>
+
+    <!-- 冻结 -->
+    <string name="freeze_normal">强制冻结</string>
+    <string name="app_taken_over">该应用已被天梦安全护盾接管</string>
+    <string name="app_taken_over_msg">应用「%1$s」已被天梦安全护盾冻结。\n如需使用，请在护盾中解冻。</string>
+    <string name="unfreeze">解冻</string>
+    <string name="freeze">冻结</string>
+    <string name="frozen">已冻结</string>
+    <string name="no_frozen_apps">暂无已冻结应用</string>
+
+    <!-- 扫描 -->
+    <string name="scanning">正在扫描…</string>
+    <string name="scan_complete">扫描完成</string>
+    <string name="no_virus">未发现锁机病毒</string>
+    <string name="virus_found">发现 %1$d 个可疑锁机应用</string>
+    <string name="scan_now">立即扫描</string>
+
+    <string name="ok">确定</string>
+    <string name="back">返回</string>
+
+    <!-- 顶部标签 -->
+    <string name="tab_home">首页</string>
+    <string name="tab_trigger">自动拦截</string>
+    <string name="tab_scan">扫描</string>
+
+    <string name="usage_access">使用情况访问</string>
+    <string name="keep_alive">防冻结保护</string>
+    <string name="keep_alive_desc">防止划掉 / 被系统冻结，划掉后台也会自动重启护盾</string>
+    <string name="keep_alive_status_loading">正在检测后台加固状态…</string>
+    <string name="keep_alive_status_ready">已加固：后台常驻 + 使用情况访问 + 电池优化白名单</string>
+    <string name="keep_alive_status_missing">需完善：%1$s</string>
+    <string name="keep_alive_on">防冻结已开启：划掉后台后护盾会自动重启</string>
+    <string name="keep_alive_off">防冻结已关闭</string>
+    <string name="keep_alive_need_usage">请授予「使用情况访问」，用于识别前台锁机病毒并拦截</string>
+    <string name="keep_alive_need_battery">请允许「后台高耗电 / 忽略电池优化」，避免系统限制护盾后台</string>
+
+    <string name="smart_block">智能拦截</string>
+    <string name="smart_block_desc">识别真实锁机病毒 / 一键 Root 工具后自动卸载（仅侧载应用，严格二次校验）</string>
+    <string name="smart_block_status_loading">正在检测拦截条件…</string>
+    <string name="smart_block_status_ready">拦截条件已就绪：%1$s + 无障碍 / 使用情况访问 + 悬浮窗</string>
+    <string name="smart_block_status_missing">缺少拦截条件：%1$s</string>
+    <string name="smart_block_gate_title">拦截条件未满足</string>
+    <string name="smart_block_gate_msg">智能拦截需要以下条件全部开启后才能启用：\n\n%1$s\n\n有 Root 时：Root + 无障碍或使用情况访问 + 悬浮窗\n无 Root 时：Shizuku 授权 + 无障碍或使用情况访问 + 悬浮窗</string>
+    <string name="smart_block_on_toast">智能拦截已开启，正在扫描已安装应用…</string>
+    <string name="smart_block_off_toast">智能拦截已关闭</string>
+    <string name="smart_block_scan_done">扫描完成，已自动卸载 %1$d 个真实病毒</string>
+    <string name="smart_block_scan_none">扫描完成，未发现需要自动卸载的应用</string>
+    <string name="smart_block_removed_title">智能拦截已自动卸载</string>
+    <string name="smart_block_removed_text">%1$s\n判定：%2$s</string>
+
+    <!-- 拦截模式 -->
+    <string name="block_mode">拦截模式</string>
+    <string name="mode_basic">基础模式</string>
+    <string name="mode_basic_desc">只强制清空后台，不冻结、不卸载（无需实时守护）</string>
+    <string name="mode_strong">强力模式</string>
+    <string name="mode_strong_desc">强停命中的高危应用并强制冻结，图标隐藏（需开启实时守护）</string>
+    <string name="mode_terminal">终结模式</string>
+    <string name="mode_terminal_desc">只对确认的锁机病毒强停并自动卸载，系统应用仅冻结（需开启实时守护）</string>
+    <string name="mode_basic_full">基础模式\n只强制清空后台，不冻结不卸载</string>
+    <string name="mode_strong_full">强力模式\n强停 + 强制冻结命中应用，图标隐藏</string>
+    <string name="mode_terminal_full">终结模式\n确认真实锁机病毒后自动卸载，最激进</string>
+    <string name="whitelist">白名单</string>
+    <string name="whitelist_trust">信任应用不检测、不冻结、不卸载</string>
+    <string name="whitelist_add">加入白名单</string>
+    <string name="whitelist_remove">移出白名单</string>
+    <string name="whitelist_in">已在白名单</string>
+    <string name="whitelist_empty">暂无白名单应用</string>
+    <string name="recommended">推荐</string>
+
+    <!-- 防闪保护 -->
+    <string name="anti_flash">防闪保护</string>
+    <string name="anti_flash_desc">拦截病毒恶意打开手电筒持续闪烁，需要相机权限</string>
+    <string name="anti_flash_off">未开启</string>
+    <string name="anti_flash_on">已开启，检测到恶意手电筒闪烁会立即强制关闭</string>
+    <string name="anti_flash_need_camera">缺少相机权限，无法强制关闭手电筒</string>
+    <string name="anti_flash_enabled">防闪保护已开启</string>
+    <string name="anti_flash_denied">未授予相机权限，防闪保护无法开启</string>
+
+    <string name="privilege_mode_root">执行通道：Root 直连，不经过游龙或任何第三方授权</string>
+    <string name="privilege_mode_shizuku">执行通道：Shizuku（无 Root），命令已混淆，不会触发游龙拦截</string>
+    <string name="privilege_mode_bypass_youlong">已检测到游龙：完全跳过 Shizuku 授权，改用系统级清空，不会被游龙拦截</string>
+    <string name="privilege_bypass_toast">已检测到游龙，已跳过 Shizuku 授权，改用系统级清理</string>
+    <string name="privilege_mode_none">执行通道：未授权，请授予 Shizuku 或 Root</string>
+
+    <!-- 一键清空威胁 / 悬浮球 -->
+    <string name="quick_clear">立即清空威胁</string>
+    <string name="quick_clear_done">已清空 %1$d 个威胁应用</string>
+    <string name="quick_clear_none">未发现威胁应用，系统安全</string>
+    <string name="quick_ball">悬浮球一键清空</string>
+    <string name="quick_ball_desc">清空后台后仍可一键清空威胁，独立于实时守护</string>
+    <string name="quick_ball_notification_title">天梦悬浮球已开启</string>
+    <string name="quick_ball_notification_text">点击「立即清空威胁」或悬浮球即可清理</string>
+    <string name="quick_ball_failed">悬浮球创建失败，请检查悬浮窗权限</string>
+    <string name="quick_ball_need_overlay">开启悬浮球需要先授予悬浮窗权限</string>
+
+    <!-- 紧急悬浮窗 -->
+    <string name="emergency_title">你是否遭遇病毒威胁</string>
+    <string name="emergency_killed">已终止 0 个第三方应用（持续循环中）</string>
+    <string name="emergency_killed_count">已终止 %1$d 个第三方应用（持续循环中）</string>
+    <string name="emergency_countdown">6 秒后自动选择「是」</string>
+    <string name="emergency_countdown_n">%1$d 秒后自动选择「是」</string>
+    <string name="emergency_yes">是</string>
+    <string name="emergency_no">否，误触了</string>
+    <string name="emergency_cancelled">已取消紧急救援</string>
+    <string name="overlay_permission">悬浮窗权限</string>
+    <string name="overlay_permission_desc">锁机病毒会覆盖屏幕，必须开启悬浮窗才能在任意界面弹出紧急确认</string>
+    <string name="overlay_not_granted_hint">请先授予「悬浮窗权限」，否则无法在任意界面弹出紧急确认</string>
+
+    <!-- 触发设置 -->
+    <string name="trigger_key">触发按键</string>
+    <string name="trigger_key_volume_down">音量 -</string>
+    <string name="trigger_key_volume_up">音量 +</string>
+    <string name="press_count">连按次数</string>
+    <string name="trigger_hint">连续按 %1$d 次%2$s 立即触发紧急弹窗</string>
+    <string name="shake_level">触发力度</string>
+    <string name="shake_level_light">轻摇</string>
+    <string name="shake_level_standard">标准</string>
+    <string name="shake_level_strong">用力</string>
+    <string name="shake_level_heavy">猛摇</string>
+    <string name="shake_hint">需以「%1$s」力度摇晃手机即可触发紧急弹窗</string>
+    <string name="shake_desc">非常用力摇晃手机才会触发，几乎不会误触</string>
+
+    <!-- 卸载页 -->
+    <string name="uninstall_title">请选择要卸载的应用</string>
+    <string name="uninstall_subtitle">带无障碍 / 悬浮窗的应用已排在前面（可多选）</string>
+    <string name="uninstall_confirm">我已选择完成，立刻卸载</string>
+    <string name="uninstall_close">我误触了，关闭</string>
+    <string name="uninstall_empty">没有可卸载的第三方应用</string>
+    <string name="uninstall_none_selected">请先勾选要卸载的应用</string>
+    <string name="uninstall_confirm_dialog">确定卸载选中的 %1$d 个应用吗？\n卸载后数据不可恢复，请确认不是常用应用。</string>
+    <string name="uninstall_fallback">需要 Shizuku 或 Root 才能静默卸载，正在打开系统卸载确认框</string>
+    <string name="uninstall_done">卸载完成：成功 %1$d 个，失败 %2$d 个</string>
+    <string name="flag_accessibility">⚠ 无障碍</string>
+    <string name="flag_overlay">⚠ 悬浮窗</string>
+    <string name="flag_admin">⚠ 设备管理器</string>
+    <string name="flag_system">系统应用</string>
+
+    <!-- 无线调试模式 -->
+    <string name="wireless_entry_title">无线调试模式</string>
+    <string name="wireless_entry_desc">无需数据线：开启无线调试，在护盾内完成 Shizuku 授权，冻结 / 卸载立即生效</string>
+    <string name="wireless_entry_button">连接无线调试</string>
+    <string name="wireless_title">无线调试模式</string>
+    <string name="wireless_subtitle">通过无线调试为 Shizuku 授权，授权后护盾立即获得冻结、卸载、强制停止能力。必须完成授权，不做跳过。</string>
+    <string name="wireless_status_title">连接状态</string>
+    <string name="wireless_label_wireless">无线调试</string>
+    <string name="wireless_label_port">调试端口</string>
+    <string name="wireless_label_service">Shizuku 服务</string>
+    <string name="wireless_label_auth">Shizuku 授权</string>
+    <string name="wireless_on">已开启</string>
+    <string name="wireless_off">未开启</string>
+    <string name="wireless_unsupported">系统版本不支持（需 Android 11+）</string>
+    <string name="wireless_port_fmt">%1$s</string>
+    <string name="wireless_port_unknown">在无线调试页面查看</string>
+    <string name="wireless_service_running">运行中</string>
+    <string name="wireless_service_stopped">未运行</string>
+    <string name="wireless_auth_granted">已授权</string>
+    <string name="wireless_auth_not_granted">未授权</string>
+    <string name="wireless_channel_fmt">当前执行通道：%1$s</string>
+    <string name="channel_root">Root 直连</string>
+    <string name="channel_shizuku">Shizuku（无线调试 / 本机）</string>
+    <string name="channel_none">未授权（请完成下方步骤）</string>
+    <string name="wireless_steps_title">连接步骤</string>
+    <string name="wireless_steps_body">1. 打开「开发者选项」\n2. 开启「无线调试」，并保持手机与无线网络可用\n3. 打开 Shizuku，选择「通过无线调试启动」，输入系统给出的配对码完成配对\n4. 回到本页点「刷新状态」，看到「Shizuku 服务 运行中」后点「申请 Shizuku 授权」并允许\n5. 授权完成后返回首页，冻结 / 卸载 / 一键清空即可正常使用</string>
+    <string name="wireless_open_dev">打开开发者选项</string>
+    <string name="wireless_open_settings">打开无线调试设置</string>
+    <string name="wireless_settings_fallback">当前系统未提供无线调试快捷入口，请在「开发者选项」中手动开启无线调试</string>
+    <string name="wireless_open_shizuku">打开 Shizuku</string>
+    <string name="wireless_shizuku_missing">未检测到 Shizuku，请先在浏览器安装 Shizuku 应用</string>
+    <string name="wireless_request_auth">申请 Shizuku 授权</string>
+    <string name="wireless_auth_requested">已发起授权，请在 Shizuku 弹窗中点击「允许」</string>
+    <string name="wireless_need_service">Shizuku 服务未运行，请先按步骤通过无线调试启动 Shizuku</string>
+    <string name="wireless_refresh">刷新状态</string>
+    <string name="wireless_refreshed">已刷新连接状态</string>
+    <string name="privilege_mode_guard_need_auth">已检测到游龙：Shizuku 授权必须完成，命令已混淆避免其文本拦截</string>
+
+    <!-- 无线配对服务搜索 -->
+    <string name="wireless_search_pairing">搜索配对服务</string>
+    <string name="wireless_searching">正在搜索无线调试配对服务…</string>
+    <string name="wireless_searching_button">搜索中…</string>
+    <string name="pairing_notification_title">发现无线调试配对服务</string>
+    <string name="pairing_notification_text">已发现配对服务 %1$s:%2$d，点击输入配对码</string>
+    <string name="pairing_title">输入配对码</string>
+    <string name="pairing_subtitle">在系统「使用配对码配对设备」弹窗中查看 6 位配对码，输入后即可完成配对。</string>
+    <string name="pairing_target_label">配对服务地址</string>
+    <string name="pairing_target_fmt">目标：%1$s</string>
+    <string name="pairing_code_hint">6 位配对码</string>
+    <string name="pairing_code_invalid">请输入 6 位配对码</string>
+    <string name="pairing_start">开始配对</string>
+    <string name="pairing_limitation">说明：受 Android 系统限制，ADB 配对需由 Shizuku 执行。点击开始配对后配对码会自动复制，并打开 Shizuku 的配对流程，粘贴配对码即可完成。</string>
+    <string name="pairing_handoff">已打开 Shizuku 配对流程，配对码已复制</string>
+    <string name="pairing_searching_title">正在搜索无线调试配对服务</string>
+    <string name="pairing_searching_text">请在系统「无线调试」中点「使用配对码配对设备」，保持弹窗打开</string>
+    <string name="pairing_stop_search">停止搜索</string>
+    <string name="pairing_not_found_title">未找到配对服务</string>
+    <string name="pairing_not_found_text">请先打开系统无线调试页，点「使用配对码配对设备」后再搜索</string>
+    <string name="wireless_search_failed">搜索失败：请确认已开启无线调试，并保持系统配对弹窗打开</string>
+    <string name="pairing_code_copied">配对码已复制，请在 Shizuku 配对弹窗中粘贴</string>
+</resources>

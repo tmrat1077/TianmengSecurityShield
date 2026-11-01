@@ -1,0 +1,53 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- 病毒刺 -->
+    <group>
+        <path
+            android:strokeWidth="1.4"
+            android:strokeColor="#66BB6A"
+            android:pathData="M12,7 L12,3" />
+        <path
+            android:strokeWidth="1.4"
+            android:strokeColor="#66BB6A"
+            android:pathData="M12,17 L12,21" />
+        <path
+            android:strokeWidth="1.4"
+            android:strokeColor="#66BB6A"
+            android:pathData="M7,12 L3,12" />
+        <path
+            android:strokeWidth="1.4"
+            android:strokeColor="#66BB6A"
+            android:pathData="M17,12 L21,12" />
+        <path
+            android:strokeWidth="1.4"
+            android:strokeColor="#66BB6A"
+            android:pathData="M8.5,8.5 L5.6,5.6" />
+        <path
+            android:strokeWidth="1.4"
+            android:strokeColor="#66BB6A"
+            android:pathData="M15.5,15.5 L18.4,18.4" />
+        <path
+            android:strokeWidth="1.4"
+            android:strokeColor="#66BB6A"
+            android:pathData="M15.5,8.5 L18.4,5.6" />
+        <path
+            android:strokeWidth="1.4"
+            android:strokeColor="#66BB6A"
+            android:pathData="M8.5,15.5 L5.6,18.4" />
+    </group>
+
+    <!-- 病毒主体 -->
+    <path
+        android:fillColor="#43A047"
+        android:pathData="M12,7 A5,5 0 1,0 12,17 A5,5 0 1,0 12,7 Z" />
+    <path
+        android:fillColor="#A5D6A7"
+        android:pathData="M10,10.4 A1.6,1.6 0 1,0 10,13.6 A1.6,1.6 0 1,0 10,10.4 Z" />
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M14.6,11.2 A0.9,0.9 0 1,0 14.6,13 A0.9,0.9 0 1,0 14.6,11.2 Z" />
+</vector>

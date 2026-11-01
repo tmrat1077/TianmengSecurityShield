@@ -1,0 +1,29 @@
+# Gradle / Android
+.gradle/
+build/
+app/build/
+captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+local.properties
+keystore.properties
+
+# 签名材料（切勿提交）
+*.jks
+*.keystore
+*.p12
+*.pfx
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# 日志 / 临时文件
+*.log
+*.hprof
+.trae-html-share-packages/
